@@ -9,17 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var cultureLbl: UILabel!
+    @IBOutlet weak var aliasLbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func findCharacterPressed(_ sender: UIButton) {
+        DownloadService.instance.downloadCharacter { (character) in
+            self.name.text = "Name: \(character.name)"
+            self.titleLbl.text = "Title: \(character.name)"
+            self.cultureLbl.text = "Culture: \(character.name)"
+            self.aliasLbl.text = "Also Known As: \(character.name)"
+        }
     }
-
-
+    
+    @IBAction func takeSnapshot(_ sender: UIButton) {
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        let activityItems: [Any] = [image!]
+        let avc = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        present(avc, animated: true, completion: nil)
+    }
+    
 }
 

@@ -1,26 +1,117 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameOfCodez" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="oNs-kv-okG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ehh-KK-3d7">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pX5-uU-pIm">
+                                <rect key="frame" x="77" y="152" width="223" height="364"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Of Codez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vM-pN-NGI">
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="75"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoy-tC-5MG">
+                                        <rect key="frame" x="60" y="105" width="102" height="55"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tle-n2-qHE">
+                                        <rect key="frame" x="81" y="190" width="61" height="38"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CULTURE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAA-sw-NNn">
+                                        <rect key="frame" x="60" y="258" width="103" height="38"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALSO KNOWN AS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVn-Lq-BgL">
+                                        <rect key="frame" x="24" y="326" width="175" height="38"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-5Y-biY">
+                                <rect key="frame" x="313" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="85s-AU-j5b"/>
+                                    <constraint firstAttribute="height" constant="30" id="C7e-qc-cjp"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="raven"/>
+                                <connections>
+                                    <action selector="takeSnapshot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Li-mZ-3F9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3Y-iR-iUb">
+                                <rect key="frame" x="61" y="556" width="253" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="EgA-Gm-9rd"/>
+                                    <constraint firstAttribute="height" constant="54" id="O4b-Pq-GsC"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="findCharacterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VH5-dj-hTz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pX5-uU-pIm" firstAttribute="centerX" secondItem="oNs-kv-okG" secondAttribute="centerX" id="2kI-AG-ZiC"/>
+                            <constraint firstItem="pX5-uU-pIm" firstAttribute="centerY" secondItem="oNs-kv-okG" secondAttribute="centerY" id="GZq-Eb-e7p"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ehh-KK-3d7" secondAttribute="bottom" id="JQx-oM-Rxa"/>
+                            <constraint firstItem="ehh-KK-3d7" firstAttribute="leading" secondItem="oNs-kv-okG" secondAttribute="leadingMargin" id="SzJ-Tb-mJ9"/>
+                            <constraint firstItem="ciR-5Y-biY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ty6-XM-3Hs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ehh-KK-3d7" secondAttribute="trailing" id="U01-W7-DKk"/>
+                            <constraint firstItem="I3Y-iR-iUb" firstAttribute="centerX" secondItem="oNs-kv-okG" secondAttribute="centerX" id="W6I-sL-DWI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I3Y-iR-iUb" secondAttribute="bottom" constant="57" id="Xbf-ZU-ZaK"/>
+                            <constraint firstItem="ehh-KK-3d7" firstAttribute="top" secondItem="oNs-kv-okG" secondAttribute="topMargin" id="r4b-v5-c60"/>
+                            <constraint firstItem="ciR-5Y-biY" firstAttribute="trailing" secondItem="oNs-kv-okG" secondAttribute="trailingMargin" id="zj5-yC-TUr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aliasLbl" destination="gVn-Lq-BgL" id="HBj-XD-yUN"/>
+                        <outlet property="cultureLbl" destination="tAA-sw-NNn" id="BIT-5a-Riz"/>
+                        <outlet property="name" destination="zoy-tC-5MG" id="uVg-Ii-dbl"/>
+                        <outlet property="titleLbl" destination="tle-n2-qHE" id="Rgf-Cy-anZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="375" height="468"/>
+        <image name="btn" width="256" height="80"/>
+        <image name="raven" width="72" height="66"/>
+    </resources>
 </document>

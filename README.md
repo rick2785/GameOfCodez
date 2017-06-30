@@ -1,0 +1,1 @@
+GameOfCodez is a Coding Challenge app that parses data from a Game Of Thrones API and also sends a message via "Raven" to display the current screen. Basically, it's a Linkedin for Game Of Thrones characters. 
